@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Droidtop/droidtop-plugin-github-apps/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Droidtop/droidtop-plugin-github-apps?label=release&style=flat-square"></a>
-  <a href="https://github.com/Droidtop/droidtop-plugin-github-apps/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Droidtop/droidtop-plugin-github-apps/build.yml?branch=main&label=build&style=flat-square"></a>
+  <a href="https://github.com/mytop-project/droidtop-plugin-github-apps/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/mytop-project/droidtop-plugin-github-apps?label=release&style=flat-square"></a>
+  <a href="https://github.com/mytop-project/droidtop-plugin-github-apps/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/mytop-project/droidtop-plugin-github-apps/build.yml?branch=main&label=build&style=flat-square"></a>
   <img alt="For droidtop" src="https://img.shields.io/badge/for-droidtop-2f7bf5?style=flat-square">
   <a href="LICENSE"><img alt="License: GPL--3.0" src="https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square"></a>
 </p>
@@ -24,11 +24,11 @@
   <a href="#licence">Licence</a>
 </p>
 
-An app catalog plugin for [droidtop](https://github.com/Droidtop/droidtop). You add a project's releases page, and droidtop shows its newest release, downloads the right APK and installs it. This plugin only reads release pages. It is never told what is installed.
+An app catalog plugin for [droidtop](https://github.com/mytop-project/droidtop). You add a project's releases page, and droidtop shows its newest release, downloads the right APK and installs it. This plugin only reads release pages. It is never told what is installed.
 
 ## Install
 
-You need [droidtop](https://github.com/Droidtop/droidtop). No page is tracked by default, so start by adding one.
+You need [droidtop](https://github.com/mytop-project/droidtop). No page is tracked by default, so start by adding one.
 
 1. In droidtop open **Settings > Plugins > Add**. droidtop's own catalog is always there.
 2. Pick **App releases (GitHub, GitLab, Codeberg)** and press **Install**.
@@ -105,7 +105,7 @@ A droidtop plugin (`native_bundle`, contract 2, contained) that is an **app cata
 (`apps.catalog@1`, droidtop `docs/plugin-api.md` 3 A12): it tracks Android apps by their developers'
 release pages, in the spirit of [Obtainium](https://github.com/ImranR98/Obtainium). droidtop draws
 everything, downloads, checks and installs (droidtop `docs/SPEC.md` 10b "Installing apps",
-Droidtop/tracker#261); this plugin is never told what is installed.
+mytop-project/tracker#261); this plugin is never told what is installed.
 
 ### Upstream
 
@@ -145,7 +145,7 @@ it a plugin, we have a branch for the actual core code, and releases are a blend
   changelog) and each line's pin in `plugin-line/lines/<line>/line.json`.
 - **`creation`**: the core code and its tests.
 - **`plugin/stable`**: `creation` at the pinned commit with `plugin-core` written over it, composed by
-  Droidtop/droidtop-platforms `tools/plugin_line.py` and checked by `plugin-line.yml`. The bundle and releases
+  mytop-project/droidtop-platforms `tools/plugin_line.py` and checked by `plugin-line.yml`. The bundle and releases
   are built from it; nothing is authored there.
 
 Every change lands on `creation` or `plugin-core` through a `ci/` branch, and the line is recomposed. There is no

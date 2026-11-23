@@ -3,7 +3,7 @@ package dev.droidtop.plugins.githubapps
 import dev.droidtop.pluginhost.PluginContext
 import org.json.JSONObject
 
-/** The broker's refusal or failure, the Kotlin plugin SDK's (Droidtop/tracker#946); this plugin's code names it as before. */
+/** The broker's refusal or failure, the Kotlin plugin SDK's (mytop-project/tracker#946); this plugin's code names it as before. */
 typealias BrokerFailure = dev.droidtop.plugin.sdk.BrokerFailure
 
 /** A forge refused because the request limit is used up; [resetAt] is the epoch second it resets, or 0 when not said. */
@@ -12,7 +12,7 @@ class RateLimited(val resetAt: Long, message: String) : java.io.IOException(mess
 /**
  * The Kotlin plugin SDK's host calls (dev.droidtop.plugin.sdk.Host: the broker call, net.request and net.download,
  * data files and files.pick, copied from droidtop-plugin-template's tools/kotlin and checked by Template drift,
- * Droidtop/tracker#946), with this plugin's own: an HTTP answer of any status ([http]) and the GitHub API through the
+ * mytop-project/tracker#946), with this plugin's own: an HTTP answer of any status ([http]) and the GitHub API through the
  * signed-in account when droidtop offers it ([githubApi]).
  */
 internal class Host(context: PluginContext) : dev.droidtop.plugin.sdk.Host(context) {

@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Names its kind for droidtop's Plugins page (`category`: sources, docs/plugin-api.md 1.2, Droidtop/tracker#179).
+- Names its kind for droidtop's Plugins page (`category`: sources, docs/plugin-api.md 1.2, mytop-project/tracker#179).
 
 ## 0.1.3
 
